@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import profile from "../assets/profile.jpg";
+import resume from "../assets/Tejal_Chaudhari_Resume.pdf";
 import {
   Github, Linkedin, Mail, ExternalLink, Download,
   Menu, X, MapPin, GraduationCap, Code2, Terminal,
@@ -178,12 +179,15 @@ function Hero() {
               View Projects <ArrowUpRight size={15} />
             </button>
             <a
-              href="/Tejal_Chaudhari_Resume.pdf"
-              download
+              href={resume}
+              download="Tejal_Chaudhari_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-[#a5b4fc] transition-all duration-200 hover:text-white hover:-translate-y-0.5"
               style={{ border: "1px solid rgba(99,102,241,0.35)" }}
             >
-              <Download size={15} /> Resume
+              <Download size={15} />
+              Resume
             </a>
             <button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-[#8892a4] transition-all duration-200 hover:text-white hover:-translate-y-0.5"
