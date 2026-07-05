@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-
 import {
   Github, Linkedin, Mail, ExternalLink, Download,
   Menu, X, MapPin, GraduationCap, Code2, Terminal,
@@ -177,7 +176,7 @@ function Hero() {
               style={{ background: "linear-gradient(135deg,#6366f1,#818cf8)" }}>
               View Projects <ArrowUpRight size={15} />
             </button>
-            <a href="src\assets\Tejal_Chaudhari_Resume.pdf" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-[#a5b4fc] transition-all duration-200 hover:text-white hover:-translate-y-0.5"
+            <a href="file\Tejal_Chaudhari_Resume.pdf" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-[#a5b4fc] transition-all duration-200 hover:text-white hover:-translate-y-0.5"
               style={{ border: "1px solid rgba(99,102,241,0.35)" }}>
               <Download size={15} /> Resume
             </a>
