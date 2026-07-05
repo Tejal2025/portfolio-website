@@ -50,7 +50,7 @@ function Bg() {
 /* ════════════════════════════════════════
    NAV
 ════════════════════════════════════════ */
-const NAV = ["About","Skills","Experience","Projects","Education","Contact"];
+const NAV = ["About", "Skills", "Experience", "Projects", "Education", "Contact"];
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -119,7 +119,7 @@ function Navbar() {
    HERO
 ════════════════════════════════════════ */
 function Hero() {
-  const roles = ["Full Stack Developer", "Java & React Engineer", "MSc CS Student"];
+  const roles = ["Full Stack Developer", "MSc CS Student"];
   const [idx, setIdx] = useState(0);
   const [text, setText] = useState("");
   const [fwd, setFwd] = useState(true);
@@ -176,7 +176,7 @@ function Hero() {
               style={{ background: "linear-gradient(135deg,#6366f1,#818cf8)" }}>
               View Projects <ArrowUpRight size={15} />
             </button>
-            <a href="#" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-[#a5b4fc] transition-all duration-200 hover:text-white hover:-translate-y-0.5"
+            <a href="file\Tejal_Chaudhari_Resume.pdf" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-[#a5b4fc] transition-all duration-200 hover:text-white hover:-translate-y-0.5"
               style={{ border: "1px solid rgba(99,102,241,0.35)" }}>
               <Download size={15} /> Resume
             </a>
@@ -244,7 +244,7 @@ function Hero() {
               </div>
               {/* skill badges */}
               <div className="mt-5 flex flex-wrap gap-1.5">
-                {["React","Java","NodeJS","MySQL","JSP"].map(t => (
+                {["React", "Java", "NodeJS", "MySQL", "JSP"].map(t => (
                   <span key={t} className="px-2 py-1 rounded-md text-[10px] font-semibold"
                     style={{ background: "rgba(99,102,241,0.14)", color: "#a5b4fc", border: "1px solid rgba(99,102,241,0.22)" }}>
                     {t}
@@ -342,7 +342,7 @@ function About() {
               style={{ background: "radial-gradient(circle,#6366f1,transparent)" }} />
             <div className="relative rounded-3xl overflow-hidden aspect-square"
               style={{ border: "1px solid rgba(255,255,255,0.09)" }}>
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop&auto=format"
+              <img src="file\myself.png"
                 alt="Tejal Chaudhari" className="w-full h-full object-cover" style={{ filter: "brightness(0.85) saturate(1.1)" }} />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top,rgba(5,5,16,0.65) 0%,transparent 55%)" }} />
               <div className="absolute bottom-5 left-5">
@@ -399,12 +399,12 @@ function About() {
    SKILLS
 ════════════════════════════════════════ */
 const SKILL_GROUPS = [
-  { icon: <Code2 size={18} />, label: "Languages", color: "#6366f1", skills: ["Java","Python","C","C++"] },
-  { icon: <Layers size={18} />, label: "Frontend",  color: "#818cf8", skills: ["HTML5","CSS3","JavaScript","ReactJS","Bootstrap"] },
-  { icon: <Terminal size={18} />, label: "Backend",   color: "#38bdf8", skills: ["NodeJS","Java Servlets","JSP"] },
-  { icon: <Database size={18} />, label: "Database",  color: "#34d399", skills: ["MySQL"] },
-  { icon: <Wrench size={18} />,   label: "Tools",     color: "#fb923c", skills: ["VS Code","Git","GitHub","Apache Tomcat"] },
-  { icon: <Users size={18} />,    label: "Soft Skills",color: "#f472b6", skills: ["Problem Solving","Teamwork","Communication","Quick Learner"] },
+  { icon: <Code2 size={18} />, label: "Languages", color: "#6366f1", skills: ["Java", "Python", "C", "C++"] },
+  { icon: <Layers size={18} />, label: "Frontend", color: "#818cf8", skills: ["HTML5", "CSS3", "JavaScript", "ReactJS", "Bootstrap"] },
+  { icon: <Terminal size={18} />, label: "Backend", color: "#38bdf8", skills: ["NodeJS", "Java Servlets", "JSP"] },
+  { icon: <Database size={18} />, label: "Database", color: "#34d399", skills: ["MySQL"] },
+  { icon: <Wrench size={18} />, label: "Tools", color: "#fb923c", skills: ["VS Code", "Git", "GitHub", "Apache Tomcat"] },
+  { icon: <Users size={18} />, label: "Soft Skills", color: "#f472b6", skills: ["Problem Solving", "Teamwork", "Communication", "Quick Learner"] },
 ];
 
 function Skills() {
@@ -518,7 +518,7 @@ const PROJECTS = [
   {
     title: "Music Recommendation Engine",
     desc: "Recommends songs based on user emotions and genres using a Java Servlets backend, JSP views, and a MySQL database with intelligent matching logic.",
-    tech: ["Java","JSP","Servlets","MySQL","Tomcat"],
+    tech: ["Java", "JSP", "Servlets", "MySQL", "Tomcat"],
     img: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=640&h=380&fit=crop&auto=format",
     color: "#6366f1",
     link: null,
@@ -526,7 +526,7 @@ const PROJECTS = [
   {
     title: "Genesis Event Platform",
     desc: "Full-stack event management platform — users can register, browse, and organize events with a secure Node.js backend and a clean React frontend.",
-    tech: ["ReactJS","NodeJS","MySQL"],
+    tech: ["ReactJS", "NodeJS", "MySQL"],
     img: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=640&h=380&fit=crop&auto=format",
     color: "#818cf8",
     link: null,
@@ -534,7 +534,7 @@ const PROJECTS = [
   {
     title: "Vosonoz — Company Website",
     desc: "Professional business website built during internship: responsive UI, PHP integration, modern frontend — delivered and live for a real client.",
-    tech: ["HTML5","CSS3","JavaScript","PHP"],
+    tech: ["HTML5", "CSS3", "JavaScript", "PHP"],
     img: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=640&h=380&fit=crop&auto=format",
     color: "#38bdf8",
     link: "https://vosonoz.com/",
@@ -656,12 +656,28 @@ function Education() {
 function Contact() {
   const { ref, on } = useReveal();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [state, setState] = useState<"idle"|"sending"|"sent">("idle");
+  const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     setState("sending");
-    setTimeout(() => setState("sent"), 1600);
+
+    const phone = "+917030311817"; // Apna WhatsApp number without + (e.g. 919876543210)
+
+    const text = `*New Portfolio Contact*
+
+Name: ${form.name}
+Email: ${form.email}
+
+Message:
+${form.message}`;
+
+    window.open(
+      `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+      "_blank"
+    );
+
+    setTimeout(() => setState("sent"), 1000);
   };
 
   const links = [
@@ -713,14 +729,14 @@ function Contact() {
                   <h3 className="font-[Poppins] font-semibold text-white mb-1">Message Sent!</h3>
                   <p className="text-sm text-[#8892a4]">Thank you — I'll reply as soon as possible.</p>
                 </div>
-                <button onClick={() => { setState("idle"); setForm({ name:"",email:"",message:"" }); }}
+                <button onClick={() => { setState("idle"); setForm({ name: "", email: "", message: "" }); }}
                   className="text-xs text-indigo-400 hover:text-indigo-300 transition-colors mt-2">
                   Send another →
                 </button>
               </div>
             ) : (
               <form onSubmit={submit} className="space-y-4">
-                {(["name","email"] as const).map(f => (
+                {(["name", "email"] as const).map(f => (
                   <div key={f}>
                     <label className="block text-[10px] text-[#8892a4] uppercase tracking-widest mb-1.5">{f}</label>
                     <input
@@ -754,8 +770,8 @@ function Contact() {
                   style={{ background: "linear-gradient(135deg,#6366f1,#818cf8)" }}>
                   {state === "sending" ? (
                     <><svg className="animate-spin w-4 h-4" viewBox="0 0 24 24" fill="none">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 100 16 8 8 0 01-8-8z"/>
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 100 16 8 8 0 01-8-8z" />
                     </svg> Sending...</>
                   ) : <><Send size={15} /> Send Message</>}
                 </button>
@@ -776,7 +792,7 @@ function Footer() {
     <footer className="relative py-10 px-6" style={{ zIndex: 1, borderTop: "1px solid rgba(255,255,255,0.05)" }}>
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-xs text-[#8892a4]">
-          © 2026 <span className="text-white font-medium">Tejal Chaudhari</span> · Designed with ❤️ using Figma AI
+          © 2026 <span className="text-white font-medium">Tejal Chaudhari</span> · Designed with ❤️
         </p>
         <div className="flex items-center gap-4">
           {[
