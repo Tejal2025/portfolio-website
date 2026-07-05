@@ -367,7 +367,7 @@ function About() {
             <div className="absolute -top-4 -right-4 rounded-2xl px-4 py-3"
               style={{ background: "rgba(12,12,30,0.88)", border: "1px solid rgba(99,102,241,0.28)", backdropFilter: "blur(12px)" }}>
               <p className="text-[10px] text-[#8892a4] uppercase tracking-wider mb-0.5">Status</p>
-              <p className="text-xs font-semibold text-emerald-400">Actively Hiring</p>
+              <p className="text-xs font-semibold text-emerald-400">Open to work</p>
             </div>
           </div>
           {/* text */}
@@ -672,26 +672,33 @@ function Contact() {
   const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
 
   const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setState("sending");
+  e.preventDefault();
+  setState("sending");
 
-    const phone = "+917030311817"; // Apna WhatsApp number without + (e.g. 919876543210)
+  const subject = "New Portfolio Contact";
 
-    const text = `*New Portfolio Contact*
-
+  const body = `
 Name: ${form.name}
+
 Email: ${form.email}
 
 Message:
-${form.message}`;
+${form.message}
+`;
 
-    window.open(
-      `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
-      "_blank"
-    );
+  window.location.href = `mailto:chaudhariteju7030@gmail.com?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
 
-    setTimeout(() => setState("sent"), 1000);
-  };
+  setTimeout(() => {
+    setState("sent");
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
+  }, 1000);
+};
 
   const links = [
     { icon: <Mail size={18} />, label: "Email", val: "chaudhariteju7030@gmail.com", href: "mailto:chaudhariteju7030@gmail.com", color: "#6366f1" },
